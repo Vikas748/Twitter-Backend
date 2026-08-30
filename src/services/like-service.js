@@ -30,7 +30,7 @@ class LikeService{
             onModel:modelType,
             likeable:modelId
             });
-            likeable.likes.push(newLike.id);
+            likeable.likes.push(newLike);
             await likeable.save();
             var isAdded=true;
         }
