@@ -4,6 +4,7 @@ import aws from 'aws-sdk';
 import dotenv from 'dotenv';
 
 dotenv.config();
+console.log("BUCKET",process.env.BUCKET_NAME)
 
 aws.config.update({
     region:process.env.AWS_REGION,
